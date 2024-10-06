@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap');
+*{
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.img-fundo{
+    background-image: url('/public/imgs/fundo_login.png');
+    background-size: cover; /* Garante que a imagem ocupe toda a tela */
+    background-position:initial; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    height: 80vh; /* Define a altura para preencher 100% da tela */
+    width: 100vw;  /* Define a largura para preencher 100% da tela */
+    display: flex;
+    justify-content: end;
+}
+
+.cabecalho, .rodape{
+    height: 10vh;
+    width: 100%;
+    background-color: white;
+}
+.section-form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 5%;
+    height: 60vh;
+    align-self: center;
+    margin-right: 2%;
+    padding: 2%;
+    border-radius: 10px;
+}
+.form-titulo{
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter';
+    color: #F7941D;
+    font-size: 1.3rem;
+}
+.form-link{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1%;
+    align-items: center;
+    font-family: 'Quicksand';
+    font-weight: 00;
+}
+.form-link a{
+    text-decoration: none;
+}
+.form-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6%;
+    height: 40vh;
+    padding: 2%;
+}
+.form-login input{
+    height: 5vh;
+    border-radius: 10px;
+    border: 1px solid #F7941D;
+    padding: 1%;
+}
+.form-login input:focus{
+    outline: none;
+}
+.form-login input::placeholder{
+    font-family: 'Quicksand';
+}
+.form-login button{
+    height: 7vh;
+    background-color: #004A8D;
+    width: 80%;
+    align-self: center;
+    font-family: 'Quicksand';
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+}
+.form-img{
+    align-self: center;
+}
