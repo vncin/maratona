@@ -18,7 +18,7 @@ $dadosUsuario = $req->fetch(PDO::FETCH_ASSOC);
 if($dadosUsuario){
     echo "Usuario encontrado!";
     echo "Encaminhar para o menu...";
-    
+    exit();
     header('Location: ./login.php?sucesso=1');
 }else{
     echo "Usuario não encontrado, verifique os dados de login!";
