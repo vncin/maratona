@@ -1,0 +1,12 @@
+section{
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+}
+.table{
+    border: 1px solid black;
+}
+.table thead{
+    font-weight: 600;
+    color: red;
+}
