@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/css/estiloVisualizaAluno.css">
     <title>Lista de Alunos</title>
 </head>
+
 <body>
     <section>
-            <table class="table">
+        <table class="table">
             <thead>
                 <tr>
                     <th>Matricula</th>
@@ -17,32 +19,39 @@
                 </tr>
             </thead>
             <tbody>
-                <?php echo "
-                        <th scope='col'>#</th>
-                        <th scope='col'>First</th>
-                        <th scope='col'>Last</th>
-                        <th scope='col'>Handle</th>";
-                ?>
-
                 <?php 
+                require_once('menu.php');
+                        foreach ($listaAlunos as $aluno){
+                            echo "
+                            <tr>
+                                <th> {$aluno['matricula']}
+                                </th>
+                                <td> {$aluno['nome_completo']} </td>
+                                <td> {$aluno['nickname']} </td>
+                            </tr>
+                                "; } 
+                ?>
+                
+                <?php
                     require_once('menu.php');
                     if (isset($listaAlunos)):
-                        foreach($listaAlunos as $aluno):
+                        foreach ($listaAlunos as $aluno):
                 ?>
-                            <tr>                    
-                            <th> <?= "{$aluno['matricula']}" ?> 
+                        <tr>
+                            <th> <?= "{$aluno['matricula']}" ?>
                             </th>
-                                <td> <?= "{$aluno['nome_completo']}" ?> </td>
-                                <td> <?= "{$aluno['nickname']}" ?> </td>
-                            </tr>
-                    <?php 
-                        endforeach;
+                            <td> <?= "{$aluno['nome_completo']}" ?> </td>
+                            <td> <?= "{$aluno['nickname']}" ?> </td>
+                        </tr>
+                <?php
+                    endforeach;
 
-                        endif; ?>
+                endif; ?>
 
             </tbody>
-            </table>
+        </table>
     </section>
-    
+
 </body>
+
 </html>
