@@ -20,7 +20,7 @@
             </div>
             <div class="form-link">
                 <p>Entre com seu Acesso ou</p>
-                <a href="#">Cadastre-se aqui</a>
+                <a href="./view_cadastro_prof.php">Cadastre-se aqui</a>
             </div>
             <form action="./auth_login.php" method="POST" class="form-login">
                 <input type="text" name="login" id="login" placeholder="Login" required>

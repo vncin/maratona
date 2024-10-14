@@ -26,7 +26,19 @@
                     <input type="password" name="senha" id="senha" required >
                 </div>
                 <button type="submit" class="botao">Cadastrar</button>
+
+                    <?php 
+                        if(isset($_GET['sucesso'])){
+                            if($_GET['sucesso'] == 0){
+                                echo "<span> Professor não cadastrado!!</span>";
+                            }else{
+                                echo "<span> Professor cadastrado!!</span>";
+                            }
+                    }
+                    ?> 
+                
             </form>
+            
         </section>
     </main>
     <footer>

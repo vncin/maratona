@@ -66,6 +66,7 @@ label{
     font-weight: bold;
     color: white;
     margin-top: 10%;
+    font-size: 1rem;
 }
 input{
     height: 7vh;
@@ -84,4 +85,13 @@ footer{
     font-weight: bold;
     height: 10vh;
     align-content: center;
+}
+
+span{
+    font-size: 1.4rem;
+    background-color: #FDC180;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    align-self: center;
 }
