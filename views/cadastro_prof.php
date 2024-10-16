@@ -8,6 +8,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     $senha = filter_input(INPUT_POST, 'senha');
 
     $senha = password_hash($senha, PASSWORD_ARGON2ID);
+    #ofuagftukadgfdhlkf
 
     $insertProf = "INSERT INTO professor VALUES(:mat, :nome, :senha)";
     $req = $dbh->prepare($insertProf);
