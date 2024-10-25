@@ -1,2 +1,7 @@
 @import url('fontes.css');
 @import url('variaveis.css');
+
+*{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
