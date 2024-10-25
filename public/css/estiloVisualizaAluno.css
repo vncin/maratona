@@ -1,3 +1,6 @@
+@import url('fontes.css');
+@import url('variaveis.css');
+
 section{
     display: flex;
     justify-content: center;
