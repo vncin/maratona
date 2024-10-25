@@ -10,26 +10,26 @@
 </head>
 <body>
     <main class="principal">
-        <nav>
+        <nav class="superior">
             <h1>WebRanking</h1>
-            <i class="fa-solid fa-trophy"></i>
+            <i class="fa-solid fa-trophy cor-icone-trofeu"></i>
         </nav>
         <div class="sair">
-            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <a href="#"><i class="fa-solid fa-arrow-right-from-bracket pos-icone-sair"></i></a>
         </div>
-        <section>
-            <div class="botoes-menu"> 
-            <i class="fa-solid fa-person-chalkboard"></i>
-            <p>Professor</p>
-            </div>
-            <div class="botoes-menu"> 
-            <i class="fa-solid fa-person-running"></i>
-            <p>Maratona</p>
-            </div>
-            <div class="botoes-menu"> 
-            <i class="fa-solid fa-people-group"></i>
-            <p>Equipes</p>
-            </div>
+        <section class="area-links">
+            <a href="#" class="botoes-menu"> 
+                <i class="fa-solid fa-person-chalkboard tam-icones-menu"></i>
+                <p>Professor</p>
+            </a>
+            <a href="#" class="botoes-menu"> 
+                <i class="fa-solid fa-person-running tam-icones-menu"></i>
+                <p>Maratona</p>
+            </a>
+            <a href="#" class="botoes-menu"> 
+                <i class="fa-solid fa-people-group tam-icones-menu"></i>
+                <p>Equipes</p>
+            </a>
         </section>
     </main>
     <footer>
