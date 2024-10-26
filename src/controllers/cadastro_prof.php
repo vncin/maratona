@@ -1,6 +1,6 @@
 <?php 
 //Lógica de inserção na tabela professor
-require_once ('../config/dbConnect.php');
+require_once ('../../config/dbConnect.php');
 
 if($_SERVER['REQUEST_METHOD'] == "POST"){
     $nome = filter_input(INPUT_POST, 'nome-completo');
@@ -15,7 +15,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     $req->bindValue(':nome', $nome);
     $req->bindValue(':senha', $senha);
     if($req->execute()){
-        header("Location: ./view_cadastro_prof.php?sucesso=1");
+        header("Location: ../../views/view_gerencia_prof.php");
     }else{
         header("Location: ./view_cadastro_prof.php?sucesso=0");
     }

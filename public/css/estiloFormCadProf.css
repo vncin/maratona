@@ -3,7 +3,6 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    
 }
 body{
     display: flex;
@@ -20,8 +19,20 @@ body{
 h1{
     text-align: center;
     font-family: 'Inter';
-    margin-top: 5%;
+    margin-top: 3%;
     font-size: 1.7rem;
+}
+.icone-voltar{
+    width: 80%;
+    margin: 0 auto;
+}
+.botao-voltar{
+    text-decoration: none;
+    color: var(--preto);
+    align-self: center;
+}
+.voltar{
+    font-size: 2rem;
 }
 .formulario{
     display: flex;

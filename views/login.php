@@ -9,7 +9,6 @@
 </head>
 
 <body>
-    <?php echo '
     <header class="cabecalho">
     </header>
     <main class="img-fundo">
@@ -20,12 +19,12 @@
             </div>
             <div class="form-link">
                 <p>Entre com seu Acesso ou</p>
-                <a href="./view_cadastro_prof.php">Cadastre-se aqui</a>
+                <a href="#">Cadastre-se aqui</a>
             </div>
-            <form action="./auth_login.php" method="POST" class="form-login">
+            <form action="../src/controllers/auth_login.php" method="POST" class="form-login">
                 <input type="text" name="login" id="login" placeholder="Login" required>
                 <input type="password" name="senha" id="senha" placeholder="Senha" required>
-                <button type="submit"> Entrar </button>'; ?>
+                <button type="submit"> Entrar </button>
                 <span> <?php echo (isset($_GET['sucesso']) && $_GET['sucesso'] == 0) ? "Usuário não encontrado" : ""; ?> </span>
             </form>
             <div class="form-img">

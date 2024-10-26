@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/estiloFormCadProf.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../public/css/estiloFormCadProf.css">
     <title>Cadastro de Professor</title>
 </head>
 <body>
     <main class="principal">
         <section class="conteudo">
             <h1>Professor <br/>Cadastre-se agora mesmo no WebRanking</h1>
-            <form action="./cadastro_prof.php" method="POST" class="formulario">
+            <nav class="icone-voltar">
+                <a href="javascript: history.go(-1)" class="botao-voltar"><i class="fa-solid fa-arrow-left voltar"></i></a>
+            </nav>
+            
+            <form action="../src/controllers/cadastro_prof.php" method="POST" class="formulario">
                 <div class="div-nome-matricula">
                     <div class="form-input">
                         <label for="nome-completo">Nome Completo</label>

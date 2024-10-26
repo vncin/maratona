@@ -51,7 +51,7 @@
 .botoes-menu{
     width: 30%;
     height: 40vh;
-    border: 1px solid var(--roxo);
+    border: 2px solid var(--roxo);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -60,6 +60,9 @@
     align-content: center;
     text-decoration: none;
     color: black;
+}
+.botoes-menu:hover{
+    background-color: var(--roxo);
 }
 .tam-icones-menu{
     width: 90%;

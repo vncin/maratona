@@ -18,7 +18,7 @@
             <a href="#"><i class="fa-solid fa-arrow-right-from-bracket pos-icone-sair"></i></a>
         </div>
         <section class="area-links">
-            <a href="#" class="botoes-menu"> 
+            <a href="view_gerencia_prof.php" class="botoes-menu"> 
                 <i class="fa-solid fa-person-chalkboard tam-icones-menu"></i>
                 <p>Professor</p>
             </a>
