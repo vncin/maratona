@@ -26,20 +26,22 @@
                         $sqlProfessores = "SELECT matricula, nome FROM professor ORDER BY nome ASC";
                         $resultado = $dbh->query($sqlProfessores);
                         $listaProfessores = $resultado->fetchAll(PDO::FETCH_ASSOC);
-                        if($listaProfessores !== "NULL"):
-                            foreach($listaProfessores as $professor):      
+                        if(count($listaProfessores) > 0){
+                            foreach($listaProfessores as $professor){      
                     ?>
                         <tr>
                            <td class="nome-completo"><?= $professor['nome'] ?></td> 
                            <td class="acoes acoes-icones">
                             <a href="view_detalhes_prof.php" class="link-acoes detalhes"><i class="fa-solid fa-eye"></i></a>
                             <a href="view_editar_prof.php" class="link-acoes editar"><i class="fa-solid fa-pen-to-square"></i></a>
-                            <a href="deletar_prof.php?matricula=<?= $professor['matricula']; ?>" class="link-acoes deletar"><i class="fa-solid fa-trash"></i></a>
+                            <a href="../src/controllers/deletar_prof.php?matricula=<?= $professor['matricula']; ?>" class="link-acoes deletar"><i class="fa-solid fa-trash"></i></a>
                            </td> 
                         </tr>
                         <?php 
-                            endforeach;
-                            endif;
+                            }
+                        }else{
+                            echo "Não há professores cadastrados";
+                        }
                         ?>
                     </tbody>                    
                 </table>
