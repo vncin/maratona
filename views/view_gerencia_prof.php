@@ -23,7 +23,7 @@
                     <tbody>
                     <?php 
                         require_once('../config/dbConnect.php');
-                        $sqlProfessores = "SELECT matricula, nome FROM professor ORDER BY nome ASC";
+                        $sqlProfessores = "SELECT matricula, nome FROM professor WHERE situacao = '1' ORDER BY nome ASC";
                         $resultado = $dbh->query($sqlProfessores);
                         $listaProfessores = $resultado->fetchAll(PDO::FETCH_ASSOC);
                         if(count($listaProfessores) > 0){

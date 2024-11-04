@@ -9,11 +9,12 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
     $senha = password_hash($senha, PASSWORD_ARGON2ID);
 
-    $insertProf = "INSERT INTO professor VALUES(:mat, :nome, :senha)";
+    $insertProf = "INSERT INTO professor VALUES(:mat, :nome, :senha, :situacao)";
     $req = $dbh->prepare($insertProf);
     $req->bindValue(':mat', $matricula);
     $req->bindValue(':nome', $nome);
     $req->bindValue(':senha', $senha);
+    $req->bindValue(':situacao', '1');
     if($req->execute()){
         header("Location: ../../views/view_gerencia_prof.php");
     }else{
